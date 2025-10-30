@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./styles.min.css" />
   <meta property="og:title" content="Mitolyn – Science-Backed Metabolic Support" />
   <meta property="og:description" content="Support energy and a healthy metabolism with Mitolyn. Claim your limited-time discount now." />
   <meta property="og:type" content="website" />
@@ -30,7 +30,20 @@
       {"@type":"Organization","name":"Mitolyn Partner","url":"https://iambhagat92.github.io/mitolyn/"}
     ]
   }</script>
-  <script defer src="./script.js"></script>
+  <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "How do I take Mitolyn?", "acceptedAnswer": {"@type": "Answer", "text": "Follow the usage directions on the official label. Many people take two capsules daily with water."}},
+      {"@type": "Question", "name": "Is there caffeine or harsh stimulants?", "acceptedAnswer": {"@type": "Answer", "text": "Mitolyn is formulated without harsh stimulants. Always review the supplement facts on the official site."}},
+      {"@type": "Question", "name": "How quickly will I notice support?", "acceptedAnswer": {"@type": "Answer", "text": "Everyone is different. Many users report steady day-to-day support when used consistently with a healthy lifestyle."}},
+      {"@type": "Question", "name": "Where does the discount apply?", "acceptedAnswer": {"@type": "Answer", "text": "All discounts, bonuses, and shipping options are provided on the official checkout page."}},
+      {"@type": "Question", "name": "Do you ship internationally?", "acceptedAnswer": {"@type": "Answer", "text": "Shipping policies are managed by the official site and may vary by region. Check the checkout page for availability."}},
+      {"@type": "Question", "name": "What if it doesn’t work for me?", "acceptedAnswer": {"@type": "Answer", "text": "The official site provides a money-back promise. Review the guarantee terms at checkout."}}
+    ]
+  }</script>
+  <link rel="preload" as="image" href="./assets/mitolyn-bottles.png" imagesizes="(min-width: 980px) 640px, 96vw">
+  <script defer src="./script.min.js"></script>
 </head>
 <body>
   <header class="site-header">
@@ -66,7 +79,7 @@
           </div>
         </div>
         <div class="hero-art">
-          <img src="./assets/mitolyn-bottles.png" alt="Mitolyn bottles" class="hero-img" loading="eager" />
+          <img src="./assets/mitolyn-bottles.png" alt="Mitolyn bottles" class="hero-img" loading="eager" decoding="async" fetchpriority="high" sizes="(min-width: 980px) 640px, 96vw" width="640" height="640" />
         </div>
       </div>
     </section>
